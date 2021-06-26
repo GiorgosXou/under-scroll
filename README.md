@@ -3,7 +3,7 @@
 
   
 
-Extends the visible scrolling range of a single editor pane, through multiple editor panes. Intended for wide screens that not turn around.
+Extends the visible scrolling range of a single editor pane, through multiple editor panes. Intended for wide screens that not turn around. Find it on [Visual Studio Code Marketplace page](https://marketplace.visualstudio.com/items?itemName=GiorgosXou.under-scroll)
 
   
 ## How to use   
