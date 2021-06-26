@@ -8,7 +8,7 @@ Extends the visible scrolling range of a single editor pane, through multiple ed
   
 ## How to use   
 **Open the same file on a new tab/editor-pane by pressing   "```ctrl``` + ```\```"  *(or as seen below)* and you are good to go:**
-![enter image description here](https://i.imgur.com/5kwm1hA.jpeg)
+![Example Image](https://github.com/GiorgosXou/under-scroll/raw/master/image.jpg)
 **Use _"```ctrl``` + ```shift``` + ```p```" > "Toggle Under Scroll"_ to Disable or Enable It**
 ##  Release Notes  
 
