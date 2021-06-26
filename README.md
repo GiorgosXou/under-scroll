@@ -3,7 +3,7 @@
 
   
 
-Extends the visible scrolling range of a single editor pane, through multiple editor panes. Intended for wide screens that not turn around. Basicly this extension was possible _(kind of)_ mainly thanks to [this](https://marketplace.visualstudio.com/items?itemName=masakit.synchronized-scrolling) extension.
+Extends the visible scrolling range of a single editor pane, through multiple editor panes. Intended for wide screens that not turn around.
 
   
 ## How to use   
@@ -18,3 +18,4 @@ Extends the visible scrolling range of a single editor pane, through multiple ed
  
 
 -----------------------------------------------------------------------------------------------------------
+_Basicly this extension was possible _(kind of)_ mainly thanks to [this](https://marketplace.visualstudio.com/items?itemName=masakit.synchronized-scrolling) extension._
