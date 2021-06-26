@@ -16,6 +16,7 @@ Extends the visible scrolling range of a single editor pane, through multiple ed
 
   
  
-
+Licence
+MIT Licence
 -----------------------------------------------------------------------------------------------------------
 _Basicly this extension was possible _(kind of)_ mainly thanks to [this](https://marketplace.visualstudio.com/items?itemName=masakit.synchronized-scrolling) extension._
