@@ -4,6 +4,7 @@ exports.deactivate = exports.activate = void 0;
 const vscode = require("vscode");
 
 
+
 let tempEditor;
 let focusedEditor;
 let isExtensionEnabled = vscode.workspace.getConfiguration("UnderScroll").get("automaticallyEnabled", true);
@@ -22,9 +23,14 @@ const visibleRangeChanged = () => vscode.window.onDidChangeTextEditorVisibleRang
     vscode.window.visibleTextEditors
     .forEach(editor => {
         if (editor != focusedEditor && editor.document.uri.scheme != "output" && focusedEditor.document.uri.fsPath == editor.document.uri.fsPath && editor.viewColumn != undefined){
-            editor.revealRange(new vscode.Range(tempEditor.visibleRanges[0].end.line +1 , 0, tempEditor.visibleRanges[0].end.line +1, 0), vscode.TextEditorRevealType.AtTop);
-            tempEditor = editor;
+            if (vscode.window.visibleTextEditors.length == 2 && tempEditor.visibleRanges[0].end.line > editor.visibleRanges[0].end.line){ // create range?
+                var visiblerange = focusedEditor.visibleRanges[0].end.line - focusedEditor.visibleRanges[0].start.line
+                editor.revealRange(new vscode.Range(tempEditor.visibleRanges[0].start.line - visiblerange, 0, tempEditor.visibleRanges[0].start.line - visiblerange, 0), vscode.TextEditorRevealType.AtTop);
+            }else{
+                editor.revealRange(new vscode.Range(tempEditor.visibleRanges[0].end.line +1 , 0, tempEditor.visibleRanges[0].end.line +1, 0), vscode.TextEditorRevealType.AtTop);
+            }
         }
+        tempEditor = editor;
     });
     
 });

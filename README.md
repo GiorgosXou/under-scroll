@@ -12,6 +12,9 @@ Extends the visible scrolling range of a single editor pane, through multiple ed
 **Use _"```ctrl``` + ```shift``` + ```p```" > "Toggle Under Scroll"_ to Disable or Enable It**
 ##  Release Notes  
 
+###  1.0.2 beta (29/6/2021)
+* *(temporarily)* FIXED switching issue between 2 editor-panes *(the issue is still present for more than 2)*
+
 ###  1.0.1 beta (26/6/2021)
 
   
